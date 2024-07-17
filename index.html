@@ -9,7 +9,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230028ad%22></rect><path fill=%22%23fff%22 d=%22M15.86 72.74L9.02 72.74L28.34 27.26L28.76 27.26L48.08 72.74L40.04 72.74L26.48 38.18L31.46 34.82L15.86 72.74ZM19.04 62.48L21.14 56.48L36.08 56.48L38.48 62.48L19.04 62.48ZM84.02 29.06L90.98 29.06L90.98 72.74L84.02 72.74L84.02 54.14L62.54 54.14L62.54 72.74L55.52 72.74L55.52 29.06L62.54 29.06L62.54 47.48L84.02 47.48L84.02 29.06Z%22></path></svg>" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -51,20 +52,23 @@
       <h1 class="sitename">Alex Holmes</h1>
     </a>
 
-    <div class="social-links text-center">
-      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+    <div class="social-links text-center">      
+      <a href="https://github.com/Alex-Holmes-X" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/alex-holmes-11477599/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/22098829/alex-holmes" class="github"><i class="bi bi-stack-overflow"></i></a>
       <a href="https://www.facebook.com/alexholmes999" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="https://www.instagram.com/ajeagle/" class="instagram"><i class="bi bi-instagram"></i></a>
       <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
-      <a href="https://www.linkedin.com/in/alex-holmes-11477599/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->   
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#skills"><i class="bi bi-file-earmark-text navicon"></i>Skills</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i>Curriculum Vitae</a></li>
+        <li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
@@ -94,7 +98,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <img src="assets/img/rebeccakerrphotography-katie&alexpriestshouse-21.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/backdrop.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Alex Holmes</h2>
@@ -110,9 +114,7 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
         <p>Hi there 👋🏻 My name is Alex and I am a Junior Full Stack Developer, I have worked in the Automotive Industry for over 20 years
-          and have now embarked on a career change moving into I.T and Web Development which is an area that I feel very passionate about. My 
-          goal is to join a smaller team of well rounded indviualls who I can work along side and gain the maximum amount
-          of knowlegde from to further progress my career. <!-- TODO add in more info about why you have changed-->
+          and have now embarked on a career change moving into I.T and Web Development which is an area that I feel very passionate about. <!-- TODO add in more info about why you have changed-->
         </p>
       </div><!-- End Section Title -->
 
@@ -222,15 +224,16 @@
         <div class="col-lg-12 content">
           <div class="row">
             <div class="col-lg-12">
-              <ul id="language-logos" class="d-flex justify-content-around align-items-center flex-wrap">
-                <li><img  src="assets/img/icons/html-5-svgrepo-com (1).svg" alt="html 5 icon" width="80rem" height="80rem" cla></li>
-                <li><img src="assets/img/icons/bootstrap-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"></li>
-                <li><img src="assets/img/icons/javascript-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"></li>
-                <li><img src="assets/img/icons/jquery-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"></li>
-                <li><img src="assets/img/icons/php-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"></li>
-                <li><img src="assets/img/icons/node-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"></li>
-                <li><img src="assets/img/icons/python-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"></li>
-                <li><img src="assets/img/icons/vs-code-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"></li>
+              <ul id="language-logos" class="d-flex justify-content-around align-items-center flex-wrap text-center">
+                <li><img  src="assets/img/icons/html-5-svgrepo-com (1).svg" alt="html 5 icon" width="80rem" height="80rem" cla><br>HTML 5</li>
+                <li><img src="assets/img/icons/bootstrap-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"><br>Bootstrap</li>
+                <li><img src="assets/img/icons/javascript-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"><br>JavaScript</li>
+                <li><img src="assets/img/icons/jquery-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"><br>JQuery</li>
+                <li><img src="assets/img/icons/php-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"><br>PHP</li>
+                <li><img src="assets/img/icons/node-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"><br>Node</li>
+                <li><img src="assets/img/icons/python-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"><br>Python</li>
+                <li><img src="assets/img/icons/vs-code-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"><br>VS Code</li>
+                <li><img src="assets/img/icons/sql-database-generic-svgrepo-com.svg" alt="bootstrap icon" width="70rem" height="70rem"><br>SQL</li>
               </ul>
             </div>
           </div>
@@ -457,11 +460,12 @@
         </div>
 
       </div>
-      <div class="container text-center">
-        <div class="align-items-center">
-          <a href="assets/downloads/Alex Holmes CV 2024.docx" class="text-white"><button type="button" class="btn btn-primary p-5 m-5">Download CV</button></a>
-        </div>
+      <div class="d-flex justify-content-center">
+        <h4>Download CV</h4>
       </div>
+      <div class="text-center">            
+          <a href="assets/downloads/Alex Holmes CV 2024.docxxxxxx" class="text-white"><button type="button" class="btn btn-primary col-6"><i class="bi bi-cloud-arrow-down"></i></button></a>          
+        </div>
      
 
     </section>
@@ -473,18 +477,35 @@
         <h2>Projects</h2>
         <div class="d-flex justify-content-evenly">
           <!-- Project 1 Button -->
-          <div>
-            <button type="button" class="btn btn-primary p-5 m-1" data-bs-toggle="modal" data-bs-target="#project-1">Project 1</button>
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/Gazetteer.png" class="card-img-top" alt="gazetteer image">
+            <div class="card-body text-center">
+              <h5 class="card-title">Gazetteer Project</h5>
+              <p class="text-center">This project involved creating a dynamic map showing various information based on local country data.
+                It also included local Weather, news and Country information populated dynamically using various
+                API providers. This project utilised HTML, PHP, JavaScript for the overall functions along with
+                JQuery, Bootstrap and Leaflet for the styling and responsive elements of the project.
+               </p>
+              <a href="https://alexjholmes.co.uk/project1/" class="btn btn-primary">Gazetteer Project</a>
+            </div>
           </div>
           <!-- Project 2 Button -->
-          <div>
-            <button type="button" class="btn btn-primary p-5 m-1" data-bs-toggle="modal" data-bs-target="#project-2">Project 2</button>
-          </div>
-        </div>
-      </div>   
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/companyDirectory.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Company Directory</h5>
+              <p class="card-text text-center">This project involved creating a company directory that could be used on mobile or desktop
+                devices and populated a compnay directory from a database using PHP routes and SQL queries to
+                add and remove Personnel, Department and Location data. This project utilised HTML and Bootstrap for the 
+                overal design and JQuery, JavaScript and PHP to populate the table and create the button 
+                functions.
+              </p>
+              <a href="https://alexjholmes.co.uk/project2/" class="btn btn-primary">Company Directory</a>
+            </div>
+          </div>  
       
       <!-- Project 1 -->
-      <div>
+      <!-- <div>
         <div class="modal" tabindex="-1" id="project-1">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -501,9 +522,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Project 2-->
-      <div>
+      <!-- <div>
         
         <div class="modal" tabindex="-1" id="project-2">
           <div class="modal-dialog">
@@ -521,7 +542,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       
     </section>
 
@@ -723,7 +744,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -731,53 +752,53 @@
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
           </div>
           <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-database-fill"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Database Management</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-pencil-square"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Web Design</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+          <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
             <div>
               <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>End Service Item -->
 
         </div>
 
@@ -786,14 +807,14 @@
     </section><!-- /Services Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <!-- <section id="testimonials" class="testimonials section"> -->
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
+      </div>End Section Title -->
+<!-- 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper">
@@ -835,8 +856,8 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>End testimonial item -->
+<!-- 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -848,8 +869,8 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>End testimonial item -->
+<!-- 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -861,8 +882,8 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>End testimonial item -->
+<!-- 
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -874,9 +895,9 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
@@ -887,15 +908,15 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>End testimonial item -->
+<!-- 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section>/Testimonials Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -903,7 +924,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -916,7 +937,7 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Address</h3>
+                  <h3>Leeds</h3>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
               </div><!-- End Info Item -->
@@ -942,7 +963,7 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -1019,6 +1040,8 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src='assets/js/script.js'></script>
+  <script src="assets/php/test.php"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

@@ -37,13 +37,14 @@
 
 /* Template Custom Colors */
 :root {
-  --header-background-color: #040b14;
+  /* --header-background-color: #001d5a; */
   --header-color: #ffffff;
 }
 
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
+  
 }
 
 /*--------------------------------------------------------------
@@ -80,11 +81,12 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: var(--header-background-color);
+  /* --background-color: var(--header-background-color); */
   --default-color: var(--header-color);
   --heading-color: var(--header-color);
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 0, 69), rgb(42, 42, 42));
   position: fixed;
   top: 0;
   left: 0;
