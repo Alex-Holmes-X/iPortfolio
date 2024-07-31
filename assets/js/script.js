@@ -35,9 +35,9 @@ $('.php-email-form').on('submit', e => {
     const email = $("#email-field").val()
     const subject = $("#subject-field").val()
     const message = $("#message-field").val();
-  
+
     $.ajax({
-        url: 'assets/php/send.php',
+        url: 'assets/php/testCopy.php',
         type: 'POST',
         dataType: 'json',
         data: {
@@ -47,12 +47,26 @@ $('.php-email-form').on('submit', e => {
           message,
         },
 
-        success: function(result) {       
-        console.log(result)    
+        success: function(result) {
 
+          $("#name-field").val('')
+          $("#email-field").val('')
+          $("#subject-field").val('')
+          $("#message-field").val(''); // This works but badly
+          $("#sent-message").val('Your message has been sent. Thank you!');
+          // console.log(result)    
+          emailSent();
         },
         error: function(result) {
-            console.log(result)
+
         }
     })
   })
+
+function emailSent () {
+  $('#emailSent').show();
+  setTimeout(function() {
+      $('#emailSent').fadeOut('fast');
+  }, 2000);
+  
+};

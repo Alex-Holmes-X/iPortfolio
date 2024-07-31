@@ -48,7 +48,7 @@ $mail->isSMTP();
 
  
 
-$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
  
 
@@ -142,7 +142,7 @@ $mail->Subject = $_POST['subject'];
 
 // $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
 
-$mail->Body = 'Message from ' . $_POST['name'] . '    Email address' . $_POST['email'] . '      '. $_POST['message'];
+$mail->Body = 'Message from:> ' . $_POST['name'] . '    Email address:> ' . $_POST['email'] . '      '. $_POST['message'];
 
  
 
