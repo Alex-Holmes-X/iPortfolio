@@ -53,7 +53,7 @@ $('.php-email-form').on('submit', e => {
           $("#email-field").val('')
           $("#subject-field").val('')
           $("#message-field").val(''); // This works but badly
-          $("#sent-message").val('Your message has been sent. Thank you!');
+          // $("#sent-message").val('Your message has been sent. Thank you!');
           // console.log(result)    
           emailSent();
         },
