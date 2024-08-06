@@ -38,6 +38,14 @@ $mail = new PHPMailer(true);
 
 $mail->isSMTP();
 
+$mail->SMTPOptions = array(
+    'ssl' => array(
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true
+    )
+    );
+
  
 
 //Enable SMTP debugging
@@ -54,7 +62,8 @@ $mail->isSMTP();
 
 //Set the hostname of the mail server
 
-$mail->Host = 'smtp.gmail.com';
+// $mail->Host = 'smtp.gmail.com';
+$mail->Host = 'localhost';
 
 //Use `$mail->Host = gethostbyname('smtp.gmail.com');`
 
@@ -70,7 +79,8 @@ $mail->Host = 'smtp.gmail.com';
 
 // - 587 for SMTP+STARTTLS
 
-$mail->Port = 465;
+// $mail->Port = 465;
+$mail->Port = 25; 
 
  
 
@@ -86,19 +96,21 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 
 //Whether to use SMTP authentication
 
-$mail->SMTPAuth = true;
+// $mail->SMTPAuth = true;
+$mail->SMTPAuth = false;
+$mail->SMTPAutoTLS = false;
 
  
 
 //Username to use for SMTP authentication - use full email address for gmail
 
-$mail->Username = 'alexjholmes1981@gmail.com';
+// $mail->Username = 'alexjholmes1981@gmail.com';
 
  
 
 //Password to use for SMTP authentication
 
-$mail->Password = 'idtokhkkwgatjilx';
+// $mail->Password = 'idtokhkkwgatjilx';
 
  
 
@@ -110,7 +122,7 @@ $mail->Password = 'idtokhkkwgatjilx';
 
 //Do not use user-submitted addresses in here
 
-$mail->setFrom('alexjholmes1981@gmail.com');
+// $mail->setFrom('alexjholmes1981@gmail.com');
 
  
 
