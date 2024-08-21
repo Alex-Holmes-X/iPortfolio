@@ -38,14 +38,6 @@ $mail = new PHPMailer(true);
 
 $mail->isSMTP();
 
-$mail->SMTPOptions = array(
-    'ssl' => array(
-    'verify_peer' => false,
-    'verify_peer_name' => false,
-    'allow_self_signed' => true
-    )
-    );
-
  
 
 //Enable SMTP debugging
@@ -80,7 +72,7 @@ $mail->Host = 'localhost';
 // - 587 for SMTP+STARTTLS
 
 // $mail->Port = 465;
-$mail->Port = 25; 
+$mail->Port = 25;
 
  
 
@@ -90,7 +82,7 @@ $mail->Port = 25;
 
 // - STARTTLS (explicit TLS on port 587)
 
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+$mail->SMTPSecure = '';
 
  
 
@@ -98,21 +90,64 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 
 // $mail->SMTPAuth = true;
 $mail->SMTPAuth = false;
-$mail->SMTPAutoTLS = false;
+// $mail->SMTPAutoTLS = false;
 
  
 
 //Username to use for SMTP authentication - use full email address for gmail
 
-// $mail->Username = 'alexjholmes1981@gmail.com';
+$mail->Username = '';
 
- 
+$mail->Helo = ''; 
 
 //Password to use for SMTP authentication
 
-// $mail->Password = 'idtokhkkwgatjilx';
+// $mail->Password = '}_wIW5#Aak8#';
 
- 
+// GoDaddy Settings */*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+// 
+// public $Host = 'localhost';
+
+/**
+* Sets the default SMTP server port.
+* @var int
+*/
+// public $Port = 25;
+
+/**
+* Sets the SMTP HELO of the message (Default is $Hostname).
+* @var string
+*/
+// public $Helo = '';
+
+/**
+* Sets connection prefix.
+* Options are "", "ssl" or "tls"
+* @var string
+*/
+// public $SMTPSecure = '';
+
+/**
+* Sets SMTP authentication. Utilizes the Username and Password variables.
+* @var bool
+*/
+// public $SMTPAuth = false;
+
+/**
+* Sets SMTP username.
+* @var string
+*/
+// public $Username = '';
+
+/**
+* Sets SMTP password.
+* @var string
+ */
+// public $Password = '';
+
+// */*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+
+
 
 //Set who the message is to be sent from
 
@@ -123,6 +158,7 @@ $mail->SMTPAutoTLS = false;
 //Do not use user-submitted addresses in here
 
 // $mail->setFrom('alexjholmes1981@gmail.com');
+$mail->setFrom('alex@alexjholmes.co.uk');
 
  
 
